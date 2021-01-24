@@ -40,4 +40,4 @@ def name_result(player1, player2):
     elif player1.choice == "scissors" and player2.choice == "paper":
         return f"{player1.name} wins by playing {player1.choice}"   
     else:
-        return "please enter rock, paper, or scissors"
+        return "No-one! Please enter rock, paper, or scissors"

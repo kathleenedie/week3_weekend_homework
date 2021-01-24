@@ -12,6 +12,10 @@ from app.models.game_play import *
 # def player_choices(choice1, choice2):
 #     return game_result(choice1, choice2)
 
+@app.route('/')
+def welcome():
+    return render_template('welcome.html') 
+
 @app.route('/game')
 def index():
     return render_template('game_play.html') #gives the form on the page
