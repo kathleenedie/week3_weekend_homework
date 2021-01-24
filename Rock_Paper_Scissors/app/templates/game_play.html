@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+
+
+    <h1>Let's Play Rock, Paper, Scissors </h1>
+
+    <h2>Players</h2>
+    <div>
+        <form action='/game' method = 'post'>
+        <label for="name1">Player 1 please enter your name</label>
+        <input type="text" name="name1" id="name1"><br>
+        <label for="choice1">Please enter your choice; rock, paper or scissors</label>
+        <input type="text" name="choice1" id="choice1"><br>
+        <label for="name2">Player 2 please enter your name</label>
+        <input type="text" name="name2" id="name2"><br>
+        <label for="choice2">Please enter your choice; rock, paper or scissors</label>
+        <input type="text" name="choice2" id="choice2"><br>
+        <input type="submit" value="Add Players">
+        </form>
+    </div>
+
+    <!-- {% for player in players%}
+    <div>
+        <p>Name: {{player.name}}</p>
+        <p>Choice: {{player.choice}}</p>
+    </div> -->
+    <!-- {% endfor %} -->
+
+    <h2>The winner is;</h2>
+    <p>{{result}}</p>
+</body>
+</html>
