@@ -25,7 +25,7 @@ def add_players():
         player2_choice = request.form['choice2'] #gives a form which takes inputs
         player1 = Player(player1_name, player1_choice)
         player2 = Player(player2_name, player2_choice)
-        # add_player(player1)
-        # add_player(player2) printed out players
-        result = game_result(player1_choice, player2_choice)
-        return render_template('game_play.html', result=result)
+        add_player(player1)
+        add_player(player2) #printed out players
+        result = name_result(player1, player2)
+        return render_template('game_play.html', players=players, result=result)
